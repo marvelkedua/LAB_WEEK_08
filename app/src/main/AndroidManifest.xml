@@ -19,8 +19,14 @@
         <service
             android:name=".NotificationService"
             android:enabled="true"
-            android:exported="true"
-            android:foregroundServiceType="dataSync"></service>
+            android:exported="false"
+            android:foregroundServiceType="dataSync"/>
+
+        <service
+            android:name=".SecondNotificationService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="dataSync"/>
 
         <activity
             android:name=".MainActivity"
